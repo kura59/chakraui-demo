@@ -16,8 +16,10 @@
 
 - ページタイトル「ユーザー」
 - ユーザー一覧を Table で表示
-- 各行に編集ボタン
-- 編集ボタンを押すと Drawer が開く
+- 検索入力（名前 or メール）
+- 「新規登録」ボタン
+- 各行に「編集」ボタン
+- 「新規登録」「編集」ボタンを押すと Drawer が開く
 
 ### Table カラム
 
@@ -27,10 +29,20 @@
 - アカウント状態
 - 操作（編集ボタン）
 
-### Drawer（編集）
+### Drawer
 
 - 名前: Text Input
 - メールアドレス: Email Input
 - ロール: Select (Admin / Member / Viewer)
 - アカウント状態: Switch (有効 / 停止)
 - Footer に 保存 / キャンセル ボタン
+
+# 成果物の出力先
+
+以下のファイルを作成/修正してください：
+
+- **src/pages/UserManagement.tsx** - ユーザー管理画面の主要コンポーネント
+- **src/components/UserTable.tsx** - ユーザー一覧テーブルコンポーネント（オプション）
+- **src/components/UserFormDrawer.tsx** - ユーザー登録・編集 Drawer コンポーネント（オプション）
+- **src/types/user.ts** - ユーザー関連の型定義（オプション）
+- **src/App.tsx** - 作成したコンポーネントをマウント
